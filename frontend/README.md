@@ -1,59 +1,76 @@
-# NayaFrontend
+# 🚀 Naya App - Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+![Naya App Banner](https://source.unsplash.com/1600x500/?security,technology)
 
-## Development server
+### 🌟 Empowering Safety with Real-Time Alerts
 
-To start a local development server, run:
+**Naya App** is a security-focused platform that provides **real-time safety alerts**, **incident reporting**, and **community-driven security updates** to help people stay informed and protected.
 
-```bash
+---
+
+## 📌 Features
+
+✅ **Live Safety Alerts** - Stay updated with real-time incident reports.  
+✅ **Incident Reporting** - Easily report safety concerns in your area.  
+✅ **Interactive Maps** - Visualize safety reports on a dynamic map.  
+✅ **User Profiles** - Manage personal data & security preferences.  
+✅ **Responsive UI** - Works on both mobile & desktop screens.  
+
+---
+
+## Project Structure
+
+frontend/ │── src/ │ ├── app/ │ │ ├── components/ # Reusable UI components │ │ ├── pages/ #
+Main application pages │ │ ├── app-routing.module.ts # Defines app navigation │ │ ├── app.component.ts #
+Root component │ ├── assets/ # Static images & resources │ ├── styles.css #
+Global styles │── angular.json # Angular configuration │── package.json # Project dependencies │──
+README.md # 
+
+Documentation
+
+
+---
+
+## Getting Started
+
+###Clone the Repository**
+```sh
+git clone https://github.com/YOUR_GITHUB_USERNAME/naya-frontend.git
+cd naya-frontend
+
+## Install Dependencies
+
+npm install
+
+##  Run the Application
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular 17 (Frontend Framework)
+TypeScript (Strongly-typed JavaScript)
+SCSS / CSS (For styling)
+Angular Router (Navigation)
+Axios (For API requests)
+Google Maps API (Upcoming feature)
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+##🤝 Contributing
+We welcome contributions!
+📜 To contribute:
 
-## Building
+Fork the repo
+Create a new feature branch
+Commit your changes
+Submit a Pull Request (PR)
 
-To build the project run:
+## Contact
+💬 Have questions or suggestions?
+📩 Email: dayo@dayoonasanya.com
+🌍 Website: dayoonasanya.com
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Like this project?
+Give it a ⭐ on GitHub!
