@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon --ext ts --exec ts-node src/server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Adedayo Adetolu Onasanya",
+  "license": "ISC",
+  "description": "Backend for Naya App",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "typescript": "^5.4.5",
+    "@types/node": "^20.11.28",
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "ts-node": "^10.9.2"
+  }
+}
+
