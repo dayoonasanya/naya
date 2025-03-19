@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,14 @@ import axios from 'axios';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  message = 'Loading...';
+  message: string = 'Loading...';
 
   ngOnInit() {
-    axios.get('http://localhost:5000/')
-      .then(response => {
+    axios.get<string>('http://localhost:5000/')
+      .then((response: AxiosResponse<string>) => {
         this.message = response.data;
       })
-      .catch(error => {
+      .catch((error: any) => {
         console.error('Error fetching data:', error);
         this.message = 'Failed to connect to backend';
       });
