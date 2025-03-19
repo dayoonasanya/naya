@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+=======
+/* You can add global styles to this file, and also import other style files */
+>>>>>>> 8951d87 (Refactor project structure: Moved frontend files from 'naya-frontend' to root 'frontend' directory for better organization.)
