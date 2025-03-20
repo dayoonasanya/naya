@@ -1,0 +1,9 @@
+{
+  "name": "@dayoonasanya/naya-utils",
+  "version": "1.0.1",
+  "description": "Shared utility functions for Naya App",
+  "main": "index.js",
+  "author": "Adedayo Adetolu Onasanya",
+  "license": "MIT"
+}
+
