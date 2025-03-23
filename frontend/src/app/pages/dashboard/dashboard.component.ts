@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import axios from 'axios';
+import { GoogleMapsLoaderService } from '../../services/google-maps-loader.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,12 +8,19 @@ import axios from 'axios';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  center: google.maps.LatLngLiteral = { lat: 9.0820, lng: 8.6753 }; // Centered on Nigeria
+  center: google.maps.LatLngLiteral = { lat: 9.0820, lng: 8.6753 };
   zoom = 6;
   alertMarkers: Array<{ position: google.maps.LatLngLiteral, label: string }> = [];
 
-  ngOnInit(): void {
-    this.fetchAlerts();
+  constructor(private mapsLoader: GoogleMapsLoaderService) {}
+
+  async ngOnInit() {
+    try {
+      await this.mapsLoader.load();
+      this.fetchAlerts();
+    } catch (error) {
+      console.error('Google Maps failed to load:', error);
+    }
   }
 
   fetchAlerts() {
